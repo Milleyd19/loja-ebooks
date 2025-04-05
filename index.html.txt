@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<style>
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fade-in 1.2s ease-out;
+  }
+
+  @keyframes pulse-text {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.85; }
+  }
+
+  .animate-pulse-text {
+    animation: pulse-text 2s ease-in-out infinite;
+  }
+  @keyframes pulse-card {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.animate-pulse-card {
+  animation: pulse-card 2.5s ease-in-out infinite;
+}
+</style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja de eBooks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-purple-600 text-gray-800 m-0 p-0">
+  <header class="relative h-80 md:h-80 flex items-center justify-center text-white overflow-hidden">
+  <!-- Imagem de fundo -->
+  <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" 
+       alt="Fundo" 
+       class="absolute w-full h-full object-cover brightness-50">
+  <!-- Conteúdo -->
+  <div class="relative text-center animate-fade-in">
+    <h1 class="text-4xl md:text-5xl font-bold animate-pulse-text">📚Loja de eBooks</h1>
+  <p class="text-lg md:text-xl text-gray-10 mt-2">Compre seus livros digitais favoritos por apenas R$ 4,90!</p>
+  </div>
+</header>
+<main class="flex flex-wrap justify-center gap-4 p-4">
+    <!-- Livro 1 -->
+        <div class="bg-white text-gray-800 rounded-lg shadow-sm p-3 flex flex-col text-center animate-pulse-card">
+    <img src="https://m.media-amazon.com/images/I/81OfAj1I3kL.SL1500.jpg" alt="Título" class="h-40 object-contain mx-auto mb-3 rounded-md">
+      <h2 class="text-lg font-semibold mb-1">Pai Rico Pai Pobre</h2>
+      <p class="text-sm text-gray-600 mb-2">Aprenda como o dinheiro trabalha para você.</p>
+      <span class="font-bold text-green-600 mb-3 text-sm">R$ 4,90</span>
+      <!-- Botão de pagamento Pix -->
+<a href="https://nubank.com.br/cobrar/1gpaoz/67f07213-d110-4766-b900-a6bcd7d5cac2" target="_blank">
+  <button style="padding: 12px 20px; background-color: green; color: white; border: none; border-radius: 8px; font-size: 16px;">
+    PAGAR COM PIX
+  </button>
+<br><br>
+<!-- Botão para preencher o formulário e receber o livro -->
+<a href="https://forms.gle/HvLZVRdBbp5ogdA97" target="_blank">
+  <button style="
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;">
+    Receber Livro por E-mail
+  </button>
+    </div>
+    
+     <!-- Livro 2 -->
+    <div class="bg-white text-gray-800 rounded-lg shadow-sm p-3 flex flex-col text-center animate-pulse-card">
+        <img src="https://m.media-amazon.com/images/I/81OfAj1I3kL.SL1500.jpg" alt="Título" class="h-40 object-contain mx-auto mb-3 rounded-md">
+          <h2 class="text-lg font-semibold mb-1">Pai Rico Pai Pobre</h2>
+          <p class="text-sm text-gray-600 mb-2">Aprenda como o dinheiro trabalha para você.</p>
+          <span class="font-bold text-green-600 mb-3 text-sm">R$ 1,99</span>
+          <a href="https://wa.me/5500000000000?text=Olá! Quero comprar o livro digital 'Pai Rico, Pai Pobre'." target="_blank" class="mt-auto bg-green-500 text-white text-sm py-1.5 rounded-md hover:bg-green-600">Comprar via WhatsApp</a>
+        </div>
+
+        <!-- Livro 3 -->
+        <div class="bg-white text-gray-800 rounded-lg shadow-sm p-3 flex flex-col text-center animate-pulse-card">
+            <img src="https://m.media-amazon.com/images/I/81OfAj1I3kL.SL1500.jpg" alt="Título" class="h-40 object-contain mx-auto mb-3 rounded-md">
+              <h2 class="text-lg font-semibold mb-1">Pai Rico Pai Pobre</h2>
+              <p class="text-sm text-gray-600 mb-2">Aprenda como o dinheiro trabalha para você.</p>
+              <span class="font-bold text-green-600 mb-3 text-sm">R$ 1,99</span>
+              <a href="https://wa.me/5500000000000?text=Olá! Quero comprar o livro digital 'Pai Rico, Pai Pobre'." target="_blank" class="mt-auto bg-green-500 text-white text-sm py-1.5 rounded-md hover:bg-green-600">Comprar via WhatsApp</a>
+            </div>
+
+            <!-- Livro 4 -->
+            <div class="bg-white text-gray-800 rounded-lg shadow-sm p-3 flex flex-col text-center animate-pulse-card">
+                <img src="https://m.media-amazon.com/images/I/81OfAj1I3kL.SL1500.jpg" alt="Título" class="h-40 object-contain mx-auto mb-3 rounded-md">
+                  <h2 class="text-lg font-semibold mb-1">Pai Rico Pai Pobre</h2>
+                  <p class="text-sm text-gray-600 mb-2">Aprenda como o dinheiro trabalha para você.</p>
+                  <span class="font-bold text-green-600 mb-3 text-sm">R$ 1,99</span>
+                  <a href="https://wa.me/5500000000000?text=Olá! Quero comprar o livro digital 'Pai Rico, Pai Pobre'." target="_blank" class="mt-auto bg-green-500 text-white text-sm py-1.5 rounded-md hover:bg-green-600">Comprar via WhatsApp</a>
+                </div>
+
+                
+                    
+          <footer class="text-center text-sm text-gray-10 py-6">
+    &copy; 2025 Loja de eBooks. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
